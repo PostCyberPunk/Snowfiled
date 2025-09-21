@@ -13,4 +13,10 @@ inputs: system: [
       didm = inputs.didm.packages.${system}.default;
     }
   )
+  #HACK: rollback
+  (
+    self: super: {
+      swaynotificationcenter = inputs.nixpkgs-2509.legacyPackages.${system}.swaynotificationcenter;
+    }
+  )
 ]
