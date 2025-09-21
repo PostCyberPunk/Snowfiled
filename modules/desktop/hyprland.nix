@@ -25,12 +25,17 @@ in
         package = hyprland.packages.${system}.hyprland;
         portalPackage = hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
       };
-      environment.systemPackages = with pkgs; [
-        hyprpicker
-        easyfocus-hyprland
-      ];
-      environment.sessionVariables = {
-        HYPR_PLUGIN_DIR = hypr-plugin-dir;
+      environment = {
+        systemPackages = with pkgs; [
+          hyprpicker
+          easyfocus-hyprland
+        ];
+        #FIX:
+        #┃        error: The `env` attribute set cannot contain any attributes passed to derivation. The following attributes are overlapping:
+        #┃          - NIX_MAIN_PROGRAM: in `env`: "Hyprland"; in derivation arguments: "Hyprland"
+        # variables = {
+        #   HYPR_PLUGIN_DIR = "${hypr-plugin-dir}";
+        # };
       };
     })
     ####### hyprvr
