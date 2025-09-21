@@ -771,6 +771,22 @@
         "type": "github"
       }
     },
+    "nixpkgs-2509": {
+      "locked": {
+        "lastModified": 1748190013,
+        "narHash": "sha256-R5HJFflOfsP5FBtk+zE8FpL8uqE7n62jqOsADvVshhE=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "62b852f6c6742134ade1abdd2a21685fd617a291",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "nixpkgs-lib": {
       "locked": {
         "lastModified": 1738452942,
@@ -956,6 +972,7 @@
         "mySecrets": "mySecrets",
         "nixos-generators": "nixos-generators",
         "nixpkgs": "nixpkgs_4",
+        "nixpkgs-2509": "nixpkgs-2509",
         "nixpkgs-stable": "nixpkgs-stable",
         "nixpkgs-unstable": "nixpkgs-unstable",
         "pcp-nvim": "pcp-nvim",
