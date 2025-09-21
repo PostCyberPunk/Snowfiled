@@ -53,12 +53,12 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     ##############Overrides Url#####################
-    sunshine = {
-      type = "git";
-      url = "https://www.github.com/PostCyberPunk/sunshine";
-      ref = "flake";
-      submodules = true;
-    };
+    # sunshine = {
+    #   type = "git";
+    #   url = "https://www.github.com/PostCyberPunk/sunshine";
+    #   ref = "flake";
+    #   submodules = true;
+    # };
     isw = {
       url = "github:PostCyberPunk/isw?ref=flake";
       inputs.nixpkgs.follows = "nixpkgs";

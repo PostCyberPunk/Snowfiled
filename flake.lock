@@ -313,24 +313,6 @@
         "type": "github"
       }
     },
-    "flake-utils_2": {
-      "inputs": {
-        "systems": "systems_5"
-      },
-      "locked": {
-        "lastModified": 1731533236,
-        "narHash": "sha256-l0KFg5HjrsfsO/JpG+r7fRrqm12kzFHyUHqHCVpMMbI=",
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "rev": "11707dc2f618dd54ca8739b309ec4fc024de578b",
-        "type": "github"
-      },
-      "original": {
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "type": "github"
-      }
-    },
     "gitignore": {
       "inputs": {
         "nixpkgs": [
@@ -893,22 +875,6 @@
         "type": "github"
       }
     },
-    "nixpkgs_6": {
-      "locked": {
-        "lastModified": 1746576598,
-        "narHash": "sha256-FshoQvr6Aor5SnORVvh/ZdJ1Sa2U4ZrIMwKBX5k2wu0=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "b3582c75c7f21ce0b429898980eddbbf05c68e55",
-        "type": "github"
-      },
-      "original": {
-        "owner": "NixOS",
-        "ref": "nixpkgs-unstable",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
     "pcp-nvim": {
       "inputs": {
         "cmake-gtest-nvim": "cmake-gtest-nvim",
@@ -976,8 +942,7 @@
         "nixpkgs-stable": "nixpkgs-stable",
         "nixpkgs-unstable": "nixpkgs-unstable",
         "pcp-nvim": "pcp-nvim",
-        "spicetify-nix": "spicetify-nix",
-        "sunshine": "sunshine"
+        "spicetify-nix": "spicetify-nix"
       }
     },
     "rust-overlay": {
@@ -1043,28 +1008,6 @@
         "type": "github"
       }
     },
-    "sunshine": {
-      "inputs": {
-        "flake-utils": "flake-utils_2",
-        "nixpkgs": "nixpkgs_6"
-      },
-      "locked": {
-        "lastModified": 1746753571,
-        "narHash": "sha256-L6js0OY1BR1vzoFIBqf2e36nCk2Tyc7ayCR3Ar1HEhY=",
-        "ref": "flake",
-        "rev": "eb996ffc3ad3ea2da4a043943874bd9feca6405d",
-        "revCount": 2713,
-        "submodules": true,
-        "type": "git",
-        "url": "https://www.github.com/PostCyberPunk/sunshine"
-      },
-      "original": {
-        "ref": "flake",
-        "submodules": true,
-        "type": "git",
-        "url": "https://www.github.com/PostCyberPunk/sunshine"
-      }
-    },
     "systems": {
       "locked": {
         "lastModified": 1681028828,
@@ -1111,21 +1054,6 @@
       }
     },
     "systems_4": {
-      "locked": {
-        "lastModified": 1681028828,
-        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
-        "owner": "nix-systems",
-        "repo": "default",
-        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nix-systems",
-        "repo": "default",
-        "type": "github"
-      }
-    },
-    "systems_5": {
       "locked": {
         "lastModified": 1681028828,
         "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
