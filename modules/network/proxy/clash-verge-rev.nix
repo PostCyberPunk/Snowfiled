@@ -18,14 +18,17 @@ in {
     programs.clash-verge = mkMerge [
       {enable = true;}
       (mkIf cfg.autoStart {
-        autoStart = true;
+        # autoStart = true;
       })
       (mkIf cfg.standalone {
         tunMode = true;
         serviceMode = true;
       })
     ];
-
+    ##HACK: autoStart not working ,try dumb way
+    environment.sessionVariables = mkIf cfg.autoStart {
+      CLASH_STARTUP = "1";
+    };
     networking.firewall.allowedTCPPorts = _ports;
   };
 }
