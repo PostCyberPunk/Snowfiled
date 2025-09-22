@@ -8,7 +8,7 @@
 with lib;
 with mLib; let
   cfg = config.myConfig.desktop.wayland;
-  _rofi = with pkgs; rofi-wayland.override {plugins = [rofi-calc];};
+  _rofi = with pkgs; rofi.override {plugins = [rofi-calc];};
 in {
   options = {
     myConfig.desktop.wayland = {

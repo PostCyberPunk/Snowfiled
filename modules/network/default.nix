@@ -29,9 +29,6 @@ with types; {
         secrets = mkOpt (listOf str) [];
         useDaed = mkBoolOpt false;
       };
-      clash-verge-rev = {
-        enable = mkBoolOpt false;
-      };
       mihomo-party = {
         enable = mkBoolOpt false;
       };

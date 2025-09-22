@@ -15,6 +15,9 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-25.05";
+    #last update
+    #nix flake lock --override-input nixpkgs-old github:NixOS/nixpkgs/62b852f6c6742134ade1abdd2a21685fd617a291
+    nixpkgs-2509.url = "github:nixos/nixpkgs/nixos-unstable";
     ###########Section :OS#####################
     #Disk Image Generator:
     nixos-generators = {
@@ -50,12 +53,12 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     ##############Overrides Url#####################
-    sunshine = {
-      type = "git";
-      url = "https://www.github.com/PostCyberPunk/sunshine";
-      ref = "flake";
-      submodules = true;
-    };
+    # sunshine = {
+    #   type = "git";
+    #   url = "https://www.github.com/PostCyberPunk/sunshine";
+    #   ref = "flake";
+    #   submodules = true;
+    # };
     isw = {
       url = "github:PostCyberPunk/isw?ref=flake";
       inputs.nixpkgs.follows = "nixpkgs";

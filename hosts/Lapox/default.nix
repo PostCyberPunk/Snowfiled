@@ -144,7 +144,11 @@ inputs: {
             config = "global";
             # secrets = ["nodes" "subs" "routing" "group"];
           };
-          clash-verge-rev.enable = true;
+          clash-verge-rev = {
+            enable = true;
+            autoStart = true;
+            standalone = false;
+          };
         };
         transfer.enable = true;
       };
