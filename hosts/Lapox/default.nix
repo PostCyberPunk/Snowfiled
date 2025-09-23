@@ -154,6 +154,9 @@ inputs: {
       };
       #############
       virtualisation = {
+        libvirt = {
+          iommu = true;
+        };
         vbox = {
           enable = true;
           kvm = true;
