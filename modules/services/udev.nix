@@ -1,5 +1,6 @@
 {
   config,
+  pkgs,
   lib,
   mLib,
   ...
@@ -13,19 +14,12 @@ in {
   options = {
     myConfig.services.udev = {
       enable = mkBoolOpt false;
-      extraRules = {
-        gs65 = mkOpt str "";
-      };
     };
   };
 
-  config =
-    mkIf cfg.enable {
-      services.udev = {
-        enable = true;
-        extraRules = "
-					${extraRules.gs65}
-				";
-      };
+  config = mkIf cfg.enable {
+    services.udev = {
+      enable = true;
     };
+  };
 }

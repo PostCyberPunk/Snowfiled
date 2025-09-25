@@ -19,4 +19,10 @@ inputs: system: [
       swaynotificationcenter = inputs.nixpkgs-2509.legacyPackages.${system}.swaynotificationcenter;
     }
   )
+  #HACK: ulauncher use new webkit to avoid using libsoup2
+  (
+    self: super: {
+      ulauncher = self.callPackage ./ulauncher/package.nix {};
+    }
+  )
 ]

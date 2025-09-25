@@ -42,7 +42,7 @@ inputs: {
         hardware = {
           cpu = "intel";
           gpu = ["nvidia" "prime"];
-          devices = ["bluetooth" "gs65"];
+          devices = ["bluetooth" "gs65" "vial"];
           withNvtop = true;
         };
         theme = {
@@ -87,7 +87,7 @@ inputs: {
       #############
       dev = {
         enable = true;
-        # framework = ["unity" "love"];
+        framework = ["unity" "love"];
         lang = ["lua" "python"];
         # editor = ["nvim" "rider"];
         editor = ["nvim"];

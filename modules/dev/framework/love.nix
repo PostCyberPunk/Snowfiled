@@ -10,6 +10,7 @@ in
   mkIf (elem "love" cfg) {
     mUser.packages = with pkgs; [
       love
-      lovely-injector
+      # FIX: cant build
+      # lovely-injector
     ];
   }

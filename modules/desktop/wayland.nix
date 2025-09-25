@@ -78,6 +78,8 @@ in {
         _rofi
         rofi-bluetooth
         yad
+
+        ulauncher
       ];
     })
   ];
