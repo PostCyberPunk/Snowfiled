@@ -29,7 +29,7 @@ in {
       nvidiaBusId = "PCI:01:00:0";
     };
     #GPU udev
-    myConfig.services.udev.extraRules.gs65 = ''
+    services.udev.extraRules = ''
       KERNEL=="card*",KERNELS=="0000:01:00.0",SUBSYSTEM=="drm",SUBSYSTEMS=="pci",SYMLINK+="dri/dgpu"
       KERNEL=="card*",KERNELS=="0000:00:02.0",SUBSYSTEM=="drm",SUBSYSTEMS=="pci",SYMLINK+="dri/igpu"
     '';
