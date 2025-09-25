@@ -56,6 +56,7 @@ in {
       gparted
 
       didm
+      usbutils
     ];
   };
 }

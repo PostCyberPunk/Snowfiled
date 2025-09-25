@@ -179,6 +179,15 @@ inputs: {
         };
       };
       #############
+      game = {
+        steam = {
+          enable = true;
+          scope = true;
+          scopeDeck = true;
+        };
+        xone.enable = true;
+        alvr.enable = true;
+      };
     };
   };
   hardware = {
