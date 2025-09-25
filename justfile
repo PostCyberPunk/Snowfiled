@@ -16,3 +16,7 @@ copy_user_key:
 	cp -i ~/.ssh/id_ed25519.pub {{target_home}}/.ssh/id_ed25519.pub
 clone_dotfiles:
 	git clone https://github.com/postcyberpunk/dotfiles {{target_home}}/dotfiles
+init_flatpak:
+	flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+fix_steamvr:
+	sudo setcap CAP_SYS_NICE+ep ~/.local/share/Steam/steamapps/common/SteamVR/bin/linux64/vrcompositor-launcher
