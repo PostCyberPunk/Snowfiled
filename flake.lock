@@ -687,10 +687,10 @@
     "mySecrets": {
       "flake": false,
       "locked": {
-        "lastModified": 1758370891,
-        "narHash": "sha256-J7RoeL4yJpO49G/EMwzJYQCJzzaks2I1NZUHVsqwcRg=",
+        "lastModified": 1759113047,
+        "narHash": "sha256-YoHHsliWqVC2KBjnDTM30kGx9CD58xtZHi67b6eGZUI=",
         "ref": "refs/heads/main",
-        "rev": "0bb8fc1201bb97f2f6b14edba0f7f3da1fea2a8f",
+        "rev": "fa43f0c8ba09134a8d43090bf134481ba6a4d177",
         "shallow": true,
         "type": "git",
         "url": "ssh://git@github.com/PostCyberPunk/nix-secrets.git"
