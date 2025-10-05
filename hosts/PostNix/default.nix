@@ -40,7 +40,7 @@ inputs: {
         hardware = {
           cpu = "intel";
           gpu = ["nvidia"];
-          devices = ["bluetooth" "vial"];
+          devices = ["bluetooth" "vial" "itx390"];
           withNvtop = true;
         };
         theme = {
