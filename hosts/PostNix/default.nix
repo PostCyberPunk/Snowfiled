@@ -202,4 +202,7 @@ inputs: {
     };
     swapDevices = [];
   };
+  pkgsConfig = {
+    cudaSupport = true;
+  };
 }

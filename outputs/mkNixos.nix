@@ -35,7 +35,7 @@ in
           nix = settings.globalNixSettings;
           nixpkgs.hostPlatform = lib.mkDefault system;
           nixpkgs.overlays = (hostConfig.overlays or []) ++ (import ../overlays inputs system);
-          nixpkgs.config = settings.globalPkgsConfig // (hostConfig.pkgsCongfig or {});
+          nixpkgs.config = settings.globalPkgsConfig // (hostConfig.pkgsConfig or {});
 
           hardware.enableRedistributableFirmware = lib.mkDefault true;
           system.stateVersion = hostConfig.stateVersion or "23.05";
