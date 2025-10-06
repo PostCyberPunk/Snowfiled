@@ -128,7 +128,7 @@ inputs: {
           video = false;
           audio = false;
           image = false;
-          modeling = false;
+          modeling = true;
         };
       };
       #############
